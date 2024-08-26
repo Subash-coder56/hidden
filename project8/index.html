@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contioner">
+        <!-- <img src="download (1).jfif" alt=""> -->
+        <button class="btn1" type="button" onclick="openPopup()">Submit</button>
+        <div class="popup" id="popup">
+            <img src="check-37583_1280.png" alt="Success">
+            <h2><span>Thank you ..!</span></h2>
+            <p>Your e-mail verification is completed... </p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+        <button class="btn2" type="button" onclick="openPop()">Cancel</button>
+        <div class="popup1" id="popup1">
+            <img src="gorilla-1049539_640.jpg" alt="Success1">
+            <h2><span>try again..!</span></h2>
+            <p>Your e-mail verification is not found... </p>
+            <button type="button" onclick="closePop()">OK</button>
+        </div>
+    </div>
+    <script>
+        let popup = document.getElementById("popup");
+        let popup1 = document.getElementById("popup1");
+
+        function openPopup() {
+            popup.classList.add("open");
+            
+        }
+
+        function closePopup() {
+            popup.classList.remove("open");
+            
+        }
+        
+        function openPop() {
+            popup1.classList.add("close");
+            
+        }
+
+        function closePop() {
+            popup1.classList.remove("close");
+            
+        }
+    </script>
+    </script>
+</body>
+</html>
